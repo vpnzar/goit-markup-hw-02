@@ -1,0 +1,58 @@
+/* цвет основного текста 212121, 100 % */
+/* абзац 757575, 100 % */
+/* белый цвет FFFFFF, 100 % */
+/* хувер 2196F3, 100 % */
+/* фон главный FFFFFF, 100 %  */
+/* фон футер 000000 */
+
+:root {
+  --primary-text-color: #212121;
+  --paragraph-text-color: #757575;
+  --footer-text-color: #000000;
+  --accent-color: #2196F3;
+}
+
+.body {
+  color: var(--primary-text-color);
+  background-color: #FFFFFF;
+}
+
+/* Хеадер */
+.logo {
+  color: var(--footer-text-color);
+}
+
+.logo .logo-style {
+  color: var(--accent-color);
+}
+
+.site-nav .link{
+  color: #212121;
+}
+
+.address-nav a{
+  color: #757575;
+}
+
+
+
+/* Портфолио */
+.portfolio-title p{
+  color: #757575;
+}
+.button {
+  color: #212121;
+}
+.button:hover,
+.button:focus {
+  color: #FFFFFF;
+  background-color: #2196f3;}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #2196f3;
+}
+}
+.address-nav a:hover,
+.address-nav a:focus {
+  color: #2196f3;
