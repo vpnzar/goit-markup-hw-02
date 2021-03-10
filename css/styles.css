@@ -1,58 +1,78 @@
-/* цвет основного текста 212121, 100 % */
-/* абзац 757575, 100 % */
-/* белый цвет FFFFFF, 100 % */
-/* хувер 2196F3, 100 % */
-/* фон главный FFFFFF, 100 %  */
+/* цвет основного текста 212121 */
+/* абзац 757575 */
+/* белый цвет FFFFFF */
+/* хувер 2196F3 */
+/* фон главный FFFFFF */
 /* фон футер 000000 */
 
 :root {
   --primary-text-color: #212121;
   --paragraph-text-color: #757575;
-  --footer-text-color: #000000;
-  --accent-color: #2196F3;
+  --accent-color: #2196f3;
+  --main-background-color: #ffffff;
+  --secondary-background-color: #000000;
+  --section-accent-color: #ffffff;
 }
+
+/* Body */
 
 .body {
   color: var(--primary-text-color);
-  background-color: #FFFFFF;
+  background-color: var(--main-background-color);
+  font-family: "roboto";
 }
 
-/* Хеадер */
-.logo {
-  color: var(--footer-text-color);
-}
-
-.logo .logo-style {
+/* Header-Navigation */
+.header-nav a:hover,
+.header-nav a:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link{
-  color: #212121;
+.header-nav a {
+  color: var(--primary-text-color);
 }
-
-.address-nav a{
-  color: #757575;
-}
-
-
-
-/* Портфолио */
-.portfolio-title p{
-  color: #757575;
-}
+/* Button */
 .button {
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .button:hover,
 .button:focus {
-  color: #FFFFFF;
-  background-color: #2196f3;}
+  color: var(--section-accent-color);
+  background-color: var(--accent-color);
+}
 
-.site-nav a:hover,
-.site-nav a:focus {
-  color: #2196f3;
+/* Hero-Section*/
+.hero-section {
+  background-color: var(--secondary-background-color);
+  color: var(--section-accent-color);
 }
+
+/* Logo */
+.accent-logo {
+  color: var(--accent-color);
 }
-.address-nav a:hover,
-.address-nav a:focus {
-  color: #2196f3;
+.header-logo {
+  color: var(--secondary-background-color);
+}
+
+/* Footer */
+.footer {
+  color: var(--section-accent-color);
+  background-color: var(--secondary-background-color);
+}
+.footer .link {
+  color: var(--section-accent-color);
+}
+/* Paragraph */
+p {
+  color: var(--paragraph-text-color);
+}
+
+.header-link a {
+  color: var(--paragraph-text-color);
+}
+
+.header-link a:hover,
+.header-link a:focus {
+  color: var(--accent-color);
+}
