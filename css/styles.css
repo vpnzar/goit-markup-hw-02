@@ -12,14 +12,48 @@
   --main-background-color: #ffffff;
   --secondary-background-color: #000000;
   --section-accent-color: #ffffff;
+  --font-family: roboto;
+  --accent-font: Raleway;
 }
 
 /* Body */
-
 .body {
   color: var(--primary-text-color);
   background-color: var(--main-background-color);
-  font-family: "roboto";
+  font-family: var(--font-family), sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  text-decoration: none;
+  list-style: none;
+}
+.header-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Paragraph */
+p {
+  color: var(--paragraph-text-color);
+}
+
+/* Logo */
+.accent-logo {
+  color: var(--accent-color);
+}
+.logo {
+  color: var(--secondary-background-color);
+  font-family: var(--accent-font);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.footer .logo {
+  color: var(--section-accent-color);
 }
 
 /* Header-Navigation */
@@ -27,13 +61,38 @@
 .header-nav a:focus {
   color: var(--accent-color);
 }
-
 .header-nav a {
-  color: var(--primary-text-color);
+  color: inherit;
+  font-family: inherit;
 }
-/* Button */
+
+/* Hero-Button */
+.hero-section .button {
+  color: var(--section-accent-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.hero-section .button:hover,
+.hero-section .button:focus {
+  background-color: #188ce8;
+}
+
+/* Examples-Buttons */
 .button {
-  color: var(--primary-text-color);
+  font-family: inherit;
+  background-color: #f5f4fa;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
 }
 .button:hover,
 .button:focus {
@@ -46,26 +105,70 @@
   background-color: var(--secondary-background-color);
   color: var(--section-accent-color);
 }
-
-/* Logo */
-.accent-logo {
-  color: var(--accent-color);
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
 }
-.header-logo {
-  color: var(--secondary-background-color);
+
+/* Advantage-section */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px,  1px,  1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.advantage-section h3 {
+  font-weight: 700;
+}
+
+/* Activity-section + Team-section*/
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+/* Team-section */
+.list .team-list {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Exemples-section */
+.exemple-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-title p {
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 /* Footer */
 .footer {
   color: var(--section-accent-color);
   background-color: var(--secondary-background-color);
+  font-size: 14px;
+  line-height: 1.71;
 }
 .footer .link {
   color: var(--section-accent-color);
 }
-/* Paragraph */
-p {
-  color: var(--paragraph-text-color);
+address {
+  font-style: normal;
 }
 
 .header-link a {
@@ -75,4 +178,8 @@ p {
 .header-link a:hover,
 .header-link a:focus {
   color: var(--accent-color);
+}
+.link {
+  text-decoration: none;
+  list-style: none;
 }
