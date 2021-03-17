@@ -1,18 +1,13 @@
-/* цвет основного текста 212121 */
-/* абзац 757575 */
-/* белый цвет FFFFFF */
-/* хувер 2196F3 */
-/* фон главный FFFFFF */
-/* фон футер 000000 */
-
 :root {
   --primary-text-color: #212121;
   --paragraph-text-color: #757575;
   --accent-color: #2196f3;
-  --main-background-color: #ffffff;
-  --secondary-background-color: #000000;
   --section-accent-color: #ffffff;
-  --font-family: roboto;
+  --main-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
+  --hero-background-color: #188ce8;
+  --font-family: Roboto;
   --accent-font: Raleway;
 }
 
@@ -38,6 +33,7 @@
 /* Paragraph */
 p {
   color: var(--paragraph-text-color);
+  font-weight: 400;
 }
 
 /* Logo */
@@ -47,7 +43,7 @@ p {
 .logo {
   color: var(--secondary-background-color);
   font-family: var(--accent-font);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -66,6 +62,24 @@ p {
   font-family: inherit;
 }
 
+div .header-link {
+  color: var(--paragraph-text-color);
+  font-weight: 500;
+}
+
+div > .header-link:hover,
+div > .header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-link {
+  color: var(--paragraph-text-color);
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  list-style: none;
+}
+
 /* Hero-Button */
 .hero-section .button {
   color: var(--section-accent-color);
@@ -82,13 +96,14 @@ p {
 
 .hero-section .button:hover,
 .hero-section .button:focus {
-  background-color: #188ce8;
+  background-color: var(--hero-background-color);
 }
 
 /* Examples-Buttons */
 .button {
   font-family: inherit;
-  background-color: #f5f4fa;
+  background-color: var(--team-background-color);
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
@@ -138,7 +153,10 @@ p {
 }
 
 /* Team-section */
-.list .team-list {
+.list .team-list,
+.team-member {
+  background-color: var(--team-background-color);
+  font-weight: 500;
   text-align: center;
   font-size: 16px;
   line-height: 1.19;
@@ -164,19 +182,21 @@ p {
   font-size: 14px;
   line-height: 1.71;
 }
-.footer .link {
-  color: var(--section-accent-color);
+
+address .contact-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  list-style: none;
 }
-address {
+address > p {
+  color: var(--section-accent-color);
   font-style: normal;
 }
 
-.header-link a {
-  color: var(--paragraph-text-color);
-}
-
-.header-link a:hover,
-.header-link a:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
 .link {
